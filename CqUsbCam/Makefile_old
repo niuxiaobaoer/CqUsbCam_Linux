@@ -1,0 +1,31 @@
+
+
+
+LIBS = -L/usr/local/lib \
+    -lusb-1.0
+LIBS += -L/home/nxb/Desktop/USBCamera/USB30/FX3_SDK_Linux/FX3_SDK_Linux_v1.3.3/cyusb_linux_1.0.4/lib \
+    -lcyusb
+
+all: _X_64_ 
+
+
+_X_64_: CqUsbCam.o DataCapture.o DataProcess.o AR0135.o
+	g++ -g -O0 -Wall CqUsbCam.o DataCapture.o DataProcess.o	AR0135.o -fPIC -shared $(LIBS) -o ./x64/libCqUsbCam.so
+
+CqUsbCam.o: CqUsbCam.cpp 
+	g++ -g -c -O0 -Wall CqUsbCam.cpp 	-fPIC -shared $(LIBS) -o CqUsbCam.o
+
+DataCapture.o: DataCapture.cpp 
+	g++ -g -c -O0 -Wall DataCapture.cpp 	-fPIC -shared $(LIBS) -o DataCapture.o
+
+DataProcess.o: DataProcess.cpp 
+	g++ -g -c -O0 -Wall DataProcess.cpp 	-fPIC -shared $(LIBS) -o DataProcess.o
+
+AR0135.o: AR0135.cpp 
+	g++ -g -c -O0 -Wall AR0135.cpp 		-fPIC -shared $(LIBS) -o AR0135.o
+
+#_X_86_: CqU3Cam.cpp
+#	g++ -g -m32 -O0 -Wall CqU3Cam.cpp -fPIC -shared $(LIBS) -o ./x86/libCqU3Cam.so
+
+clean: 
+	rm ./x64/*.so *.o
