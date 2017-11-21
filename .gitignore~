@@ -34,8 +34,4 @@
 =======
 
 
-#user specific
-*.cmake
-*.log
-
 >>>>>>> add projects
