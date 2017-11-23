@@ -37,6 +37,6 @@
 #user specific
 *.cmake
 *.log
-build/
+CqUsbCam/build/*
 
 >>>>>>> add projects
