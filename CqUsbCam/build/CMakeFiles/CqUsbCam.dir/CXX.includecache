@@ -88,16 +88,6 @@ DataProcess.h
 tagSensor.h
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/tagSensor.h
 
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/DataCapture.cpp
-DataCapture.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/DataCapture.h
-unistd.h
--
-stdio.h
--
-Types.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
-
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/DataCapture.h
 Types.h
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
@@ -133,14 +123,6 @@ wqueue.h
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/wqueue.h
 Types.h
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
-opencv/cv.hpp
--
-opencv2/opencv.hpp
--
-opencv2/core/core.hpp
--
-opencv2/highgui/highgui.hpp
--
 
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/ImgFrame.h
 stdint.h
@@ -154,8 +136,6 @@ list
 Types.h
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
 
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h
-
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
 
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/cyusb.h
@@ -163,48 +143,6 @@ libusb-1.0/libusb.h
 -
 linux/types.h
 -
-
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0135.cpp
-AR0135.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0135.h
-../SensorCapbablity.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h
-
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0135.h
-stdio.h
--
-string
--
-list
--
-../Types.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
-../cyusb.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/cyusb.h
-../tagSensor.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/tagSensor.h
-
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/MT9V034.cpp
-string.h
--
-MT9V034.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/MT9V034.h
-../SensorCapbablity.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h
-
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/MT9V034.h
-stdio.h
--
-string
--
-list
--
-../Types.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
-../cyusb.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/cyusb.h
-../tagSensor.h
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/tagSensor.h
 
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/tagSensor.h
 stdio.h
