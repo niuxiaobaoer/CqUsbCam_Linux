@@ -147,10 +147,7 @@ void* CDataCapture::ThreadAdapter(void* __this)
 void CDataCapture::ThreadFunc()
 {
 	cq_int32_t transferred=0;
-	
-	pthread_mutex_lock(&m_mutexThread);
-
-	
+		
 	libusb_device * dev = libusb_get_device(m_pUsbHandle);
 	libusb_config_descriptor *config_descriptor_in; 
 	libusb_get_config_descriptor(dev, 0, &config_descriptor_in);
@@ -182,6 +179,8 @@ void CDataCapture::ThreadFunc()
 	printf("chData[0]=%x, chData[1]=%x\n", chData[0], chData[1]);
 */
 	unsigned char endpoint=(0x01==config_descriptor_in->interface->altsetting->endpoint->bEndpointAddress?0x81:0x86);
+
+	pthread_mutex_lock(&m_mutexThread);
 	while (true==m_bCapture)
 	{
 
