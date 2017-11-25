@@ -18,6 +18,5 @@ link_libraries(cyusb)
 
 add_library(CqUsbCam SHARED ${DIR_SRCS} ${SENSORS_DIR_SRCS})
 
-target_link_libraries (CqUsbCam  cyusb)
 
 

@@ -179,7 +179,6 @@ void CDataCapture::ThreadFunc()
 	printf("chData[0]=%x, chData[1]=%x\n", chData[0], chData[1]);
 */
 	unsigned char endpoint=(0x01==config_descriptor_in->interface->altsetting->endpoint->bEndpointAddress?0x81:0x86);
-
 	pthread_mutex_lock(&m_mutexThread);
 	while (true==m_bCapture)
 	{

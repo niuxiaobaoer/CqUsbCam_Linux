@@ -133,14 +133,6 @@ wqueue.h
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/wqueue.h
 Types.h
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
-opencv/cv.hpp
--
-opencv2/opencv.hpp
--
-opencv2/core/core.hpp
--
-opencv2/highgui/highgui.hpp
--
 
 /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/ImgFrame.h
 stdint.h
