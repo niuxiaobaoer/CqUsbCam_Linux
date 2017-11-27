@@ -25,6 +25,7 @@ examples目录下是应用示例：其中cmd目录下保存了示例的命令行
 
      sudo apt-get install libusb-1.0-0-dev
      
-编译示例工程需要安装opencv，建议以下安装方式：
+
+    编译示例工程需要安装opencv，建议以下安装方式：
 
      sudo apt-get install libcv-dev
