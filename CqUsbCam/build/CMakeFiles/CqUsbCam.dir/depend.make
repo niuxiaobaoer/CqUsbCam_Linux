@@ -29,6 +29,9 @@ CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o: ../ImgFrame.h
 CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o: ../Types.h
 CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o: ../wqueue.h
 
+CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o: ../cyusb.h
+CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o: ../libcyusb.cpp
+
 CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o: ../SensorCapbablity.h
 CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o: ../Types.h
 CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o: ../cyusb.h

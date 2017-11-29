@@ -1,1 +1,0 @@
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/examples/cmd/AR013X/build/CMakeFiles/usbCamConsole.dir

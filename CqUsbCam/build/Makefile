@@ -183,6 +183,30 @@ DataProcess.cpp.s:
 	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/DataProcess.cpp.s
 .PHONY : DataProcess.cpp.s
 
+libcyusb.o: libcyusb.cpp.o
+.PHONY : libcyusb.o
+
+# target to build an object file
+libcyusb.cpp.o:
+	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o
+.PHONY : libcyusb.cpp.o
+
+libcyusb.i: libcyusb.cpp.i
+.PHONY : libcyusb.i
+
+# target to preprocess a source file
+libcyusb.cpp.i:
+	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/libcyusb.cpp.i
+.PHONY : libcyusb.cpp.i
+
+libcyusb.s: libcyusb.cpp.s
+.PHONY : libcyusb.s
+
+# target to generate assembly for a file
+libcyusb.cpp.s:
+	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/libcyusb.cpp.s
+.PHONY : libcyusb.cpp.s
+
 sensors/AR0135.o: sensors/AR0135.cpp.o
 .PHONY : sensors/AR0135.o
 
@@ -249,6 +273,9 @@ help:
 	@echo "... DataProcess.o"
 	@echo "... DataProcess.i"
 	@echo "... DataProcess.s"
+	@echo "... libcyusb.o"
+	@echo "... libcyusb.i"
+	@echo "... libcyusb.s"
 	@echo "... sensors/AR0135.o"
 	@echo "... sensors/AR0135.i"
 	@echo "... sensors/AR0135.s"

@@ -94,7 +94,7 @@ list
 unistd.h
 -
 
-/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/examples/cmd/AR013X/main.cpp
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/examples/cmd/AR013x/main.cpp
 stdio.h
 -
 stdlib.h

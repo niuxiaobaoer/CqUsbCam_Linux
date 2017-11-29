@@ -13,8 +13,8 @@ add_subdirectory(sensors)
 aux_source_directory(. DIR_SRCS)
 aux_source_directory(./sensors SENSORS_DIR_SRCS)
 
-LINK_DIRECTORIES("..")
-link_libraries(cyusb)
+#link_directories("/usr/local/lib")
+link_libraries(usb-1.0 rt)
 
 add_library(CqUsbCam SHARED ${DIR_SRCS} ${SENSORS_DIR_SRCS})
 

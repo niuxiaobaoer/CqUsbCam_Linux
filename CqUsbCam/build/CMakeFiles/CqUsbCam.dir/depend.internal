@@ -29,6 +29,9 @@ CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/ImgFrame.h
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/wqueue.h
+CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o
+ /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/cyusb.h
+ /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/libcyusb.cpp
 CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
