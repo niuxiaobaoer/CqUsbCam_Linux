@@ -49,9 +49,32 @@ include CMakeFiles/CqUsbCam.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CqUsbCam.dir/flags.make
 
+CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o: CMakeFiles/CqUsbCam.dir/flags.make
+CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o: ../libcyusb.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o -c /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/libcyusb.cpp
+
+CMakeFiles/CqUsbCam.dir/libcyusb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CqUsbCam.dir/libcyusb.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/libcyusb.cpp > CMakeFiles/CqUsbCam.dir/libcyusb.cpp.i
+
+CMakeFiles/CqUsbCam.dir/libcyusb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CqUsbCam.dir/libcyusb.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/libcyusb.cpp -o CMakeFiles/CqUsbCam.dir/libcyusb.cpp.s
+
+CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o.requires:
+.PHONY : CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o.requires
+
+CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o.provides: CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o.requires
+	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o.provides.build
+.PHONY : CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o.provides
+
+CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o.provides.build: CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o
+
 CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o: CMakeFiles/CqUsbCam.dir/flags.make
 CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o: ../DataProcess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o -c /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/DataProcess.cpp
 
@@ -74,7 +97,7 @@ CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o.provides.build: CMakeFiles/CqUsbCam.di
 
 CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o: CMakeFiles/CqUsbCam.dir/flags.make
 CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o: ../CqUsbCam.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o -c /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/CqUsbCam.cpp
 
@@ -97,7 +120,7 @@ CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o.provides.build: CMakeFiles/CqUsbCam.dir/C
 
 CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o: CMakeFiles/CqUsbCam.dir/flags.make
 CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o: ../DataCapture.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o -c /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/DataCapture.cpp
 
@@ -120,7 +143,7 @@ CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o.provides.build: CMakeFiles/CqUsbCam.di
 
 CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o: CMakeFiles/CqUsbCam.dir/flags.make
 CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o: ../sensors/AR0135.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o -c /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0135.cpp
 
@@ -143,7 +166,7 @@ CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o.provides.build: CMakeFiles/CqUsbCam
 
 CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o: CMakeFiles/CqUsbCam.dir/flags.make
 CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o: ../sensors/MT9V034.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o -c /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/MT9V034.cpp
 
@@ -166,6 +189,7 @@ CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o.provides.build: CMakeFiles/CqUsbCa
 
 # Object files for target CqUsbCam
 CqUsbCam_OBJECTS = \
+"CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o" \
 "CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o" \
 "CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o" \
 "CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o" \
@@ -175,6 +199,7 @@ CqUsbCam_OBJECTS = \
 # External object files for target CqUsbCam
 CqUsbCam_EXTERNAL_OBJECTS =
 
+libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o
 libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o
 libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o
 libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o
@@ -189,6 +214,7 @@ libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/link.txt
 CMakeFiles/CqUsbCam.dir/build: libCqUsbCam.so
 .PHONY : CMakeFiles/CqUsbCam.dir/build
 
+CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o.requires
 CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o.requires
 CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o.requires
 CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o.requires

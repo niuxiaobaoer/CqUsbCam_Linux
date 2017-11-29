@@ -177,7 +177,7 @@ CqUsbCamAPI_BINARY_DIR:STATIC=/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDem
 CqUsbCamAPI_SOURCE_DIR:STATIC=/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam
 
 //Dependencies for the target
-CqUsbCam_LIB_DEPENDS:STATIC=general;cyusb;
+CqUsbCam_LIB_DEPENDS:STATIC=general;usb-1.0;general;rt;
 
 
 ########################
