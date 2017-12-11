@@ -105,12 +105,6 @@ signal.h
 -
 termio.h
 -
-opencv/cv.hpp
--
-opencv2/opencv.hpp
--
-opencv2/core/core.hpp
--
 opencv2/highgui/highgui.hpp
 -
 ../../../../CqUsbCam_Linux/CqUsbCam/CqUsbCam.h
