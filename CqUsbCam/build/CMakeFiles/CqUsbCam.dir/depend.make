@@ -39,6 +39,13 @@ CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o: ../sensors/AR0135.cpp
 CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o: ../sensors/AR0135.h
 CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o: ../tagSensor.h
 
+CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o: ../SensorCapbablity.h
+CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o: ../Types.h
+CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o: ../cyusb.h
+CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o: ../sensors/MT9M001.cpp
+CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o: ../sensors/MT9M001.h
+CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o: ../tagSensor.h
+
 CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o: ../SensorCapbablity.h
 CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o: ../Types.h
 CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o: ../cyusb.h

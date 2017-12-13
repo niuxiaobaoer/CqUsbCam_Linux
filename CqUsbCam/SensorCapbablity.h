@@ -22,6 +22,7 @@
  #define RESOLU_640_480_BIN 				0x83
  #define RESOLU_640_480 				0x84
  #define RESOLU_752_480 				0x85
+ #define RESOLU_1280_1024 				0x86
 
  
  #define TRIGMODE_AUTO					0x90
