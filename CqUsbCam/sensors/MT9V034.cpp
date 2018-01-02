@@ -287,7 +287,7 @@ static cq_int32_t MT9V034_SetMirrorType(cyusb_handle *pUsbHandle, const cq_uint3
 	if(MIRROR_NORMAL==chMirrorType)	//normal
 		return MT9V034_WrSensorReg(pUsbHandle, 0x0D, 0x0300);
 
-	if(MIRROR_X==chMirrorType)//X
+	if(MIRROR_X==chMirrorType)//X	
 		return MT9V034_WrSensorReg(pUsbHandle, 0x0D, 0x0320);
 
 	if(MIRROR_Y==chMirrorType)//Y

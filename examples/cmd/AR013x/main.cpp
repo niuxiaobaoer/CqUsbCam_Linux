@@ -144,7 +144,7 @@ void timerFunction(int sig)
 	cam0.ClearRecvFrameCnt();
 	
 
-	printf("cam0: %d Fps     %0.4f MBs\n", iFrameCntPerSec, float(iByteCntPerSec)/1024.0/1024.0);
+	printf("cam0: %ld Fps     %0.4f MBs\n", iFrameCntPerSec, float(iByteCntPerSec)/1024.0/1024.0);
 	//system("gnome-terminal -e  sudo echo  hahah >./text");
     /***************************************************************/
 	alarm(1);
@@ -348,7 +348,7 @@ int main(int argc, char *argv[])
 				printf("Please input the trig frequency (Dec, 0~45), make sure the device is in FPGA trig mode\n");
 				char str[10];
 				memset(str,0,sizeof(str));
-				gets(str);
+				fgets(str, 9,stdin);
 				unsigned int freq=atoi(str);
 				printf("Your input is %d \n", freq);
 				pCamInUse->SetFpgaTrigFreq(freq);	
@@ -391,7 +391,7 @@ int main(int argc, char *argv[])
 				printf("Please input the expo value (Dec, 0~65536)\n");
 				char str[10];
 				memset(str,0,sizeof(str));
-				gets(str);
+				fgets(str, 9,stdin);
 				unsigned int expoValue=atoi(str);
 				printf("Your input is %d \n", expoValue);
 				pCamInUse->SetExpoValue(expoValue);
@@ -402,7 +402,7 @@ int main(int argc, char *argv[])
 				printf("Please input the gain value (Dec, 0~64)\n");
 				char str[10];
 				memset(str,0,sizeof(str));
-				gets(str);
+				fgets(str, 9,stdin);
 				unsigned int gainValue=atoi(str);
 				printf("Your input is %d \n", gainValue);
 				pCamInUse->SetGainValue(gainValue);
@@ -505,12 +505,12 @@ int main(int argc, char *argv[])
 				printf("Please input the reg address (Hex. Just number, no \'0x\' needed))\n");
 				char str[10];
 				memset(str,0,sizeof(str));
-				gets(str);
+				fgets(str, 9,stdin);
 				unsigned int iDecRegAddr=hex2dec(str);
 				printf("Your input is %x \n", iDecRegAddr);
 				printf("Please input the reg value (Hex. Just number, no \'0x\' needed))\n");
 				memset(str,0,sizeof(str));
-				gets(str);
+				fgets(str, 9,stdin);
 				unsigned int iDecRegValue=hex2dec(str);
 				printf("Your input is %x \n", iDecRegValue);
 				pCamInUse->WrSensorReg(iDecRegAddr, iDecRegValue);
@@ -521,7 +521,7 @@ int main(int argc, char *argv[])
 				printf("Please input the reg address (Hex. Just number, no \'0x\' needed))\n");
 				char str[10];
 				memset(str,0,sizeof(str));
-				gets(str);
+				fgets(str, 9,stdin);
 				unsigned int iDecRegAddr=hex2dec(str);
 				printf("Your input is %x \n", iDecRegAddr);
 				unsigned int iValue=0;
@@ -534,12 +534,12 @@ int main(int argc, char *argv[])
 				printf("Please input the reg address (Hex. Just number, no \'0x\' needed))\n");
 				char str[10];
 				memset(str,0,sizeof(str));
-				gets(str);
+				fgets(str, 9,stdin);
 				unsigned char iDecRegAddr=hex2dec(str);
 				printf("Your input is %x \n", iDecRegAddr);
 				printf("Please input the reg value (Hex. Just number, no \'0x\' needed))\n");
 				memset(str,0,sizeof(str));
-				gets(str);
+				fgets(str, 9,stdin);
 				unsigned char iDecRegValue=hex2dec(str);
 				printf("Your input is %x \n", iDecRegValue);
 				pCamInUse->WrFpgaReg(iDecRegAddr, iDecRegValue);
@@ -550,7 +550,7 @@ int main(int argc, char *argv[])
 				printf("Please input the reg address (Hex. Just number, no \'0x\' needed))\n");
 				char str[10];
 				memset(str,0,sizeof(str));
-				gets(str);
+				fgets(str, 9,stdin);
 				unsigned int iDecRegAddr=hex2dec(str);
 				printf("Your input is %x \n", iDecRegAddr);
 				unsigned int iValue=0;

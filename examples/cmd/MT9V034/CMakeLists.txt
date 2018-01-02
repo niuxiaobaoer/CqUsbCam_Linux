@@ -4,7 +4,7 @@ project(usbCamConsole)
 cmake_minimum_required(VERSION 2.8)
 
 if(CMAKE_COMPILER_IS_GNUCXX)
-    set(CMAKE_CXX_FLAGS "-std=c++11 -O3 -Wall -g ${CMAKE_CXX_FLAGS}")
+    set(CMAKE_CXX_FLAGS "-std=c++11 -O3 -Wall -Wno-unused-result -g ${CMAKE_CXX_FLAGS}")
     message(STATUS "optional:-std=c++11 -O3 -Wall -g")   
 endif(CMAKE_COMPILER_IS_GNUCXX)
 
