@@ -14,30 +14,37 @@
 #define MAIN_RESOLU_SELECT	 		'a'
 #define MAIN_RESOLU_752_480 		'0'
 #define MAIN_RESOLU_640_480 		'1'
-#define MAIN_RESOLU_640_480SKIP 		'2'
+#define MAIN_RESOLU_640_480SKIP 	'2'
 #define MAIN_RESOLU_640_480BIN		'3'
+#define MAIN_RESOLU_1280_1024		'4'
 
-#define MAIN_BITDEPTH_SELECT 	'b'
-#define MAIN_BITDEPTH_8		 	'0'
+#define MAIN_BITDEPTH_SELECT 		'b'
+#define MAIN_BITDEPTH_8		 		'0'
 #define MAIN_BITDEPTH_16		 	'1'
 #define MAIN_BITDEPTH_L8		 	'2'
 
-#define MAIN_PROCTYPE_SELECT 	'c'
-#define MAIN_PROCTYPE_N		 	'0'
-#define MAIN_PROCTYPE_X		 	'1'
-#define MAIN_PROCTYPE_Y		 	'2'
+#define MAIN_PROCTYPE_SELECT 		'c'
+#define MAIN_PROCTYPE_N		 		'0'
+#define MAIN_PROCTYPE_X		 		'1'
+#define MAIN_PROCTYPE_Y		 		'2'
 #define MAIN_PROCTYPE_XY		 	'3'
 
-#define MAIN_CHECK_SPEED 		'd'
-#define MAIN_TRIGMODE_AUTO 		'e'
-#define MAIN_TRIGMODE_FPGA 		'f'
+
+#define MAIN_CHECK_SPEED 			'd'
+
+#define MAIN_TRIGMODE_SELECT		'e'
+#define MAIN_TRIGMODE_AUTO 			'0'
+#define MAIN_TRIGMODE_FPGA 			'1'
+#define MAIN_TRIGMODE_SOFT 			'2'
+#define MAIN_TRIGMODE_SIGNAL		'3'
+
 #define MAIN_FPGA_TRIG_FREQ_SELECT	'g'
-#define MAIN_EXPO_VALUE_SELECT	'h'
-#define MAIN_GAIN_VALUE_SELECT	'i'
+#define MAIN_EXPO_VALUE_SELECT		'h'
+#define MAIN_GAIN_VALUE_SELECT		'i'
 #define MAIN_AUTO_GAIN_EXPO_SELECT	'j'
-#define MAIN_ROI			'k'
-#define MAIN_CAPTURE			'l'
-#define MAIN_ROI_BOX			'm'
+#define MAIN_ROI					'k'
+#define MAIN_CAPTURE				'l'
+#define MAIN_ROI_BOX				'm'
 #define MAIN_ANALOG_GAIN_AUTO_TRIG	'n'
 #define MAIN_ANALOG_GAIN_FPGA_TRIG	'o'
 #define MAIN_ANALOG_GAIN_1X			'1'
@@ -65,9 +72,9 @@
 #define MAIN_SELECT_SENSOR		'J'
 #define MAIN_EXIT_NORMAL		'z'
 
-string sensor = "MT9V034";
-unsigned int g_width=752;
-unsigned int g_height=480;
+string sensor = "MT9M001";
+unsigned int g_width=1280;
+unsigned int g_height=1024;
 
 pthread_mutex_t mutexDisp;
 pthread_mutex_t mutexCam;
@@ -172,7 +179,7 @@ int main(int argc, char *argv[])
 		return -1;
 	}
 	cam0.ClaimInterface(0);
-	//cam0.InitSensor(); //not required by 	mt9v034
+	cam0.InitSensor(); 
 
 	checkspeed();
 
@@ -182,15 +189,12 @@ int main(int argc, char *argv[])
 	{
 		printf("Please input your choice ...\n");
 		printf("\
-				\'a\':	Select resolution\n\
 				\'c\':	Select proc type\n\
 				\'d\':	Check speed\n\
-				\'e\':	Set auto trig mode\n\
-				\'f\':	Set fpga trig mode\n\
+				\'e\':	Select trig mode\n\
 				\'g\':	Set fpga trig frequency\n\
 				\'h\':	Set expo value\n\
 				\'i\':	Set gain value\n\
-				\'j\':	Set auto-gain-expo function\n\
 				\n\
 				\'l\':	Start capture\n\
 				\n\
@@ -206,6 +210,7 @@ int main(int argc, char *argv[])
 		printf("Your choice is %c\n", ch);
 		switch(ch)
 		{
+#if 0
 			case MAIN_RESOLU_SELECT:
 				{
 					printf("Please input your choice ...\n");
@@ -241,7 +246,7 @@ int main(int argc, char *argv[])
 					}
 					break;
 				}
-
+#endif
 			case MAIN_PROCTYPE_SELECT:
 				{
 					printf("Please input your choice ...\n");
@@ -294,23 +299,50 @@ int main(int argc, char *argv[])
 					}
 					break;
 				}
-			case MAIN_TRIGMODE_AUTO:
-				pCamInUse->SetTrigMode(TRIGMODE_AUTO);
-				break;
-			case MAIN_TRIGMODE_FPGA:
-				pCamInUse->SetTrigMode(TRIGMODE_FPGA);
-				break;
+			case MAIN_TRIGMODE_SELECT:
+				{
+					printf("Please input your choice ...\n");
+					printf("\
+							\'0\':	Auto\n\
+							\'1\':	FPGA\n\
+							\'2\':	Soft\n\
+							\'3\':	Signal\n"\
+					      );
+					char ch=getchar();
+					getchar();
+					printf("Your choice is %c", ch);
+					switch(ch)
+					{
+						case MAIN_TRIGMODE_AUTO:
+							pCamInUse->SetTrigMode(TRIGMODE_AUTO);
+							break;
+						case MAIN_TRIGMODE_FPGA:
+							pCamInUse->SetTrigMode(TRIGMODE_FPGA);
+							break;
+						case MAIN_TRIGMODE_SOFT:
+							pCamInUse->SetTrigMode(TRIGMODE_SOFT);
+							break;
+						case MAIN_TRIGMODE_SIGNAL:
+							pCamInUse->SetTrigMode(TRIGMODE_SIGNAL);
+							break;
+						default:
+							printf("Bad inut ...\n");
+					}
+					break;
+				}
 			case MAIN_FPGA_TRIG_FREQ_SELECT:
 				{
 					printf("Please input the trig frequency (Dec, 0~45), make sure the device is in FPGA trig mode\n");
 					char str[10];
 					memset(str,0,sizeof(str));
+					//gets(str);
 					fgets(str, 9,stdin);
 					unsigned int freq=atoi(str);
 					printf("Your input is %d \n", freq);
 					pCamInUse->SetFpgaTrigFreq(freq);	
 					break;				
 				}
+#if 0
 			case MAIN_AUTO_GAIN_EXPO_SELECT:
 				{
 					printf("Please input your choice ...\n");
@@ -342,7 +374,7 @@ int main(int argc, char *argv[])
 					}
 					break;
 				}
-
+#endif
 			case MAIN_EXPO_VALUE_SELECT:
 				{
 					printf("Please input the expo value (Dec, 0~65536)\n");
