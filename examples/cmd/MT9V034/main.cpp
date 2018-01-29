@@ -140,10 +140,6 @@ void timerFunction(int sig)
 	cam0.GetRecvFrameCnt(iFrameCntPerSec);
 	cam0.ClearRecvFrameCnt();
 
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
 	printf("cam0: %ld Fps     %0.4f MBs\n", iFrameCntPerSec, float(iByteCntPerSec)/1024.0/1024.0);
 
 
@@ -304,18 +300,6 @@ int main(int argc, char *argv[])
 				pCamInUse->SetTrigMode(TRIGMODE_FPGA);
 				break;
 			case MAIN_FPGA_TRIG_FREQ_SELECT:
-<<<<<<< HEAD
-			{
-				printf("Please input the trig frequency (Dec, 0~45), make sure the device is in FPGA trig mode\n");
-				char str[10];
-				memset(str,0,sizeof(str));
-				fgets(str, 9,stdin);
-				unsigned int freq=atoi(str);
-				printf("Your input is %d \n", freq);
-				pCamInUse->SetFpgaTrigFreq(freq);	
-				break;				
-			}
-=======
 				{
 					printf("Please input the trig frequency (Dec, 0~45), make sure the device is in FPGA trig mode\n");
 					char str[10];
@@ -326,7 +310,6 @@ int main(int argc, char *argv[])
 					pCamInUse->SetFpgaTrigFreq(freq);	
 					break;				
 				}
->>>>>>> dev
 			case MAIN_AUTO_GAIN_EXPO_SELECT:
 				{
 					printf("Please input your choice ...\n");
@@ -360,29 +343,6 @@ int main(int argc, char *argv[])
 				}
 
 			case MAIN_EXPO_VALUE_SELECT:
-<<<<<<< HEAD
-			{
-				printf("Please input the expo value (Dec, 0~65536)\n");
-				char str[10];
-				memset(str,0,sizeof(str));
-				fgets(str, 9,stdin);
-				unsigned int expoValue=atoi(str);
-				printf("Your input is %d \n", expoValue);
-				pCamInUse->SetExpoValue(expoValue);
-				break;
-			}
-			case MAIN_GAIN_VALUE_SELECT:
-			{
-				printf("Please input the gain value (Dec, 0~64)\n");
-				char str[10];
-				memset(str,0,sizeof(str));
-				fgets(str, 9,stdin);
-				unsigned int gainValue=atoi(str);
-				printf("Your input is %d \n", gainValue);
-				pCamInUse->SetGainValue(gainValue);
-				break;
-			}		
-=======
 				{
 					printf("Please input the expo value (Dec, 0~65536)\n");
 					char str[10];
@@ -404,8 +364,6 @@ int main(int argc, char *argv[])
 					pCamInUse->SetGainValue(gainValue);
 					break;
 				}		
->>>>>>> dev
-
 			case MAIN_CAPTURE:
 				{
 					cv::namedWindow("disp",CV_WINDOW_AUTOSIZE | CV_GUI_NORMAL);
@@ -440,66 +398,6 @@ int main(int argc, char *argv[])
 				}
 
 			case MAIN_WRITE_SENSOR_REG:
-<<<<<<< HEAD
-			{
-				printf("Please input the reg address (Hex. Just number, no \'0x\' needed))\n");
-				char str[10];
-				memset(str,0,sizeof(str));
-				fgets(str, 9,stdin);
-				unsigned int iDecRegAddr=hex2dec(str);
-				printf("Your input is %x \n", iDecRegAddr);
-				printf("Please input the reg value (Hex. Just number, no \'0x\' needed))\n");
-				memset(str,0,sizeof(str));
-				fgets(str, 9,stdin);
-				unsigned int iDecRegValue=hex2dec(str);
-				printf("Your input is %x \n", iDecRegValue);
-				pCamInUse->WrSensorReg(iDecRegAddr, iDecRegValue);
-				//goto Badinput;
-				break;
-			}
-			case MAIN_READ_SENSOR_REG:
-			{
-				printf("Please input the reg address (Hex. Just number, no \'0x\' needed))\n");
-				char str[10];
-				memset(str,0,sizeof(str));
-				fgets(str, 9,stdin);
-				unsigned int iDecRegAddr=hex2dec(str);
-				printf("Your input is %x \n", iDecRegAddr);
-				unsigned int iValue=0;
-				pCamInUse->RdSensorReg(iDecRegAddr, iValue);
-				printf("reg value is %04x\n", iValue&0xffff);
-				break;
-			}
-			case MAIN_WRITE_FPGA_REG:
-			{
-				printf("Please input the reg address (Hex. Just number, no \'0x\' needed))\n");
-				char str[10];
-				memset(str,0,sizeof(str));
-				fgets(str, 9,stdin);
-				unsigned char iDecRegAddr=hex2dec(str);
-				printf("Your input is %x \n", iDecRegAddr);
-				printf("Please input the reg value (Hex. Just number, no \'0x\' needed))\n");
-				memset(str,0,sizeof(str));
-				fgets(str, 9,stdin);
-				unsigned char iDecRegValue=hex2dec(str);
-				printf("Your input is %x \n", iDecRegValue);
-				pCamInUse->WrFpgaReg(iDecRegAddr, iDecRegValue);
-				break;
-			}
-			case MAIN_READ_FPGA_REG:
-			{
-				printf("Please input the reg address (Hex. Just number, no \'0x\' needed))\n");
-				char str[10];
-				memset(str,0,sizeof(str));
-				fgets(str, 9,stdin);
-				unsigned int iDecRegAddr=hex2dec(str);
-				printf("Your input is %x \n", iDecRegAddr);
-				unsigned int iValue=0;
-				pCamInUse->RdFpgaReg(iDecRegAddr, iValue);
-				printf("reg value is %02x\n", iValue&0xff);
-				break;
-			}
-=======
 				{
 					printf("Please input the reg address (Hex. Just number, no \'0x\' needed))\n");
 					char str[10];
@@ -558,8 +456,6 @@ int main(int argc, char *argv[])
 					printf("reg value is %02x\n", iValue&0xff);
 					break;
 				}
->>>>>>> dev
-
 
 			case MAIN_EXIT_NORMAL:
 				cam0.ReleaseInterface();
