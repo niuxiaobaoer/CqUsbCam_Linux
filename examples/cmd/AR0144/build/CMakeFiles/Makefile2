@@ -47,60 +47,45 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam
+CMAKE_SOURCE_DIR = /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/examples/cmd/AR0144
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build
+CMAKE_BINARY_DIR = /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/examples/cmd/AR0144/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/CqUsbCam.dir
+# Target rules for target CMakeFiles/usbCamConsole.dir
 
 # All Build rule for target.
-CMakeFiles/CqUsbCam.dir/all:
-	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/depend
-	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles  1 2 3 4 5 6 7 8
-	@echo "Built target CqUsbCam"
-.PHONY : CMakeFiles/CqUsbCam.dir/all
+CMakeFiles/usbCamConsole.dir/all:
+	$(MAKE) -f CMakeFiles/usbCamConsole.dir/build.make CMakeFiles/usbCamConsole.dir/depend
+	$(MAKE) -f CMakeFiles/usbCamConsole.dir/build.make CMakeFiles/usbCamConsole.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/examples/cmd/AR0144/build/CMakeFiles  1
+	@echo "Built target usbCamConsole"
+.PHONY : CMakeFiles/usbCamConsole.dir/all
 
 # Include target in all.
-all: CMakeFiles/CqUsbCam.dir/all
+all: CMakeFiles/usbCamConsole.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/CqUsbCam.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CqUsbCam.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles 0
-.PHONY : CMakeFiles/CqUsbCam.dir/rule
+CMakeFiles/usbCamConsole.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/examples/cmd/AR0144/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/usbCamConsole.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/examples/cmd/AR0144/build/CMakeFiles 0
+.PHONY : CMakeFiles/usbCamConsole.dir/rule
 
 # Convenience name for target.
-CqUsbCam: CMakeFiles/CqUsbCam.dir/rule
-.PHONY : CqUsbCam
+usbCamConsole: CMakeFiles/usbCamConsole.dir/rule
+.PHONY : usbCamConsole
 
 # clean rule for target.
-CMakeFiles/CqUsbCam.dir/clean:
-	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/clean
-.PHONY : CMakeFiles/CqUsbCam.dir/clean
+CMakeFiles/usbCamConsole.dir/clean:
+	$(MAKE) -f CMakeFiles/usbCamConsole.dir/build.make CMakeFiles/usbCamConsole.dir/clean
+.PHONY : CMakeFiles/usbCamConsole.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/CqUsbCam.dir/clean
+clean: CMakeFiles/usbCamConsole.dir/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory sensors
-
-# Convenience name for "all" pass in the directory.
-sensors/all:
-.PHONY : sensors/all
-
-# Convenience name for "clean" pass in the directory.
-sensors/clean:
-.PHONY : sensors/clean
-
-# Convenience name for "preinstall" pass in the directory.
-sensors/preinstall:
-.PHONY : sensors/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

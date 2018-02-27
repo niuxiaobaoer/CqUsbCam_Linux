@@ -16,6 +16,7 @@
 #include "Types.h"
 #include "./sensors/AR0135.h"
 #include "./sensors/MT9V034.h"
+#include "./sensors/AR0144.h"
 #include <assert.h>
 
 
@@ -40,7 +41,9 @@ CCqUsbCam::CCqUsbCam()
 
 	RegisterSensor_AR0135(m_sensorList);
 	RegisterSensor_MT9V034(m_sensorList);
+	RegisterSensor_AR0144(m_sensorList);
 }
+
 cq_int32_t  CCqUsbCam::SelectSensor(string strSensorName)
 {
 

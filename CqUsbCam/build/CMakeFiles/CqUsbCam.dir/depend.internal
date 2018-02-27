@@ -5,6 +5,7 @@ CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/./Types.h
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/./cyusb.h
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/./sensors/AR0135.h
+ /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/./sensors/AR0144.h
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/./sensors/MT9V034.h
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/./tagSensor.h
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/CqUsbCam.cpp
@@ -38,6 +39,13 @@ CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/cyusb.h
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0135.cpp
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0135.h
+ /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/tagSensor.h
+CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o
+ /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h
+ /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
+ /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/cyusb.h
+ /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0144.cpp
+ /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0144.h
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/tagSensor.h
 CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o
  /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h

@@ -141,9 +141,32 @@ CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o.provides: CMakeFiles/CqUsbCam.dir/Data
 
 CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o.provides.build: CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o
 
+CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o: CMakeFiles/CqUsbCam.dir/flags.make
+CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o: ../sensors/AR0144.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o -c /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0144.cpp
+
+CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0144.cpp > CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.i
+
+CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0144.cpp -o CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.s
+
+CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o.requires:
+.PHONY : CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o.requires
+
+CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o.provides: CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o.requires
+	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o.provides.build
+.PHONY : CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o.provides
+
+CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o.provides.build: CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o
+
 CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o: CMakeFiles/CqUsbCam.dir/flags.make
 CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o: ../sensors/AR0135.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o -c /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/AR0135.cpp
 
@@ -166,7 +189,7 @@ CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o.provides.build: CMakeFiles/CqUsbCam
 
 CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o: CMakeFiles/CqUsbCam.dir/flags.make
 CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o: ../sensors/MT9M001.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o -c /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/MT9M001.cpp
 
@@ -189,7 +212,7 @@ CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o.provides.build: CMakeFiles/CqUsbCa
 
 CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o: CMakeFiles/CqUsbCam.dir/flags.make
 CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o: ../sensors/MT9V034.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o -c /home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/sensors/MT9V034.cpp
 
@@ -216,6 +239,7 @@ CqUsbCam_OBJECTS = \
 "CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o" \
 "CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o" \
 "CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o" \
+"CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o" \
 "CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o" \
 "CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o" \
 "CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o"
@@ -227,6 +251,7 @@ libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o
 libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o
 libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o
 libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o
+libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o
 libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o
 libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o
 libCqUsbCam.so: CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o
@@ -243,6 +268,7 @@ CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/libcyusb.cpp.o.require
 CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/DataProcess.cpp.o.requires
 CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o.requires
 CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/DataCapture.cpp.o.requires
+CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o.requires
 CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.o.requires
 CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/sensors/MT9M001.cpp.o.requires
 CMakeFiles/CqUsbCam.dir/requires: CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o.requires

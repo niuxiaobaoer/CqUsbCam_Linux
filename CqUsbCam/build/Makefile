@@ -231,6 +231,30 @@ sensors/AR0135.cpp.s:
 	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/sensors/AR0135.cpp.s
 .PHONY : sensors/AR0135.cpp.s
 
+sensors/AR0144.o: sensors/AR0144.cpp.o
+.PHONY : sensors/AR0144.o
+
+# target to build an object file
+sensors/AR0144.cpp.o:
+	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.o
+.PHONY : sensors/AR0144.cpp.o
+
+sensors/AR0144.i: sensors/AR0144.cpp.i
+.PHONY : sensors/AR0144.i
+
+# target to preprocess a source file
+sensors/AR0144.cpp.i:
+	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.i
+.PHONY : sensors/AR0144.cpp.i
+
+sensors/AR0144.s: sensors/AR0144.cpp.s
+.PHONY : sensors/AR0144.s
+
+# target to generate assembly for a file
+sensors/AR0144.cpp.s:
+	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/sensors/AR0144.cpp.s
+.PHONY : sensors/AR0144.cpp.s
+
 sensors/MT9M001.o: sensors/MT9M001.cpp.o
 .PHONY : sensors/MT9M001.o
 
@@ -303,6 +327,9 @@ help:
 	@echo "... sensors/AR0135.o"
 	@echo "... sensors/AR0135.i"
 	@echo "... sensors/AR0135.s"
+	@echo "... sensors/AR0144.o"
+	@echo "... sensors/AR0144.i"
+	@echo "... sensors/AR0144.s"
 	@echo "... sensors/MT9M001.o"
 	@echo "... sensors/MT9M001.i"
 	@echo "... sensors/MT9M001.s"
