@@ -390,8 +390,8 @@ int main(int argc, char *argv[])
 					printf("Please input the expo value (Dec, 0~65536)\n");
 					char str[10];
 					memset(str,0,sizeof(str));
-					unsigned int expoValue=atoi(str);
 					fgets(str,9,stdin);
+					unsigned int expoValue=atoi(str);
 					printf("Your input is %d \n", expoValue);
 					pCamInUse->SetExpoValue(expoValue);
 					break;
