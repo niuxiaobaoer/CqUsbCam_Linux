@@ -29,3 +29,37 @@ examples目录下是应用示例：其中cmd目录下保存了示例的命令行
     编译示例工程需要安装opencv，建议以下安装方式：
 
      sudo apt-get install libopencv-dev
+
+
+4. 一般，我们推荐使用sudo ./usbCamConsole.sh运行应用程序，该脚本执行了如下几个动作
+	
+	1): 拷贝 cyusb.conf 文件到 /etc 目录下
+	
+	2): 设置环境变量
+
+	3): 使用root权限运行应用程序
+	
+如果用户不希望使用root权限，而是直接使用./usbCamConsole执行应用程序，有可能程序会打印如下提示并自动退出
+	
+	Error in opening device
+	
+	-5 usb device(s) found!
+
+	exiting ...
+
+这是因为程序没有root权限导致usb设备失败。此时，可以使用如下办法解决
+	
+	1): sudo vim /etc/udev/rules.d/90-cqusb.rules
+	
+	2): 在文件中添加如下内容
+		
+		
+		SUBSYSTEMS == "usb",
+		ATTRS{idVendor} == "2014",
+		ATTRS{idProduct} == "0117"
+		GROUP = "users",
+		MODE = "0666"
+
+	3): 保存后重启即可
+	
+	
