@@ -1,5 +1,5 @@
 # CqUsbCam_Linux
-1. 采起电子的USB相机应用程序依赖的共享库工程源码。兼容USB2.0和USB3.0，目前支持的sensor型号包括MT9V034，AR0134和AR0135。 
+1. 采起电子的USB相机应用程序依赖的共享库工程源码。兼容USB2.0和USB3.0，目前支持的sensor型号包括MT9V034，AR0134和AR0135, SC130GS。 
 
 2. 工程采用cmake进行管理，要求最低版本为cmake2.8。
 examples目录下是应用示例：其中cmd目录下保存了示例的命令行版本。在各示例工程下的build文件夹中，已经存在编译好的可执行程序（编译环境为x86, ubuntu14.04， gcc4.8.6, opencv2.4.9, libusb1.0.21），x86机器的Ubuntu14.04用户可在该路径下直接使用sudo ./usbCamConsole.sh 执行。 其他用户建议重新编译共享库和应用。重新编译步骤如下：

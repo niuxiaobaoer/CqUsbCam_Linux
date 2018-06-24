@@ -35,6 +35,9 @@
  #define ANALOGGAIN_2X					0x99
  #define ANALOGGAIN_4X					0x9A
  #define ANALOGGAIN_8X					0x9B  
+ #define ANALOGGAIN_16X					0x9C
+ #define ANALOGGAIN_32X					0x9D
+ #define ANALOGGAIN_64X					0x9E  
  
  #define USBTYPE_20						0xA0
  #define USBTYPE_30						0xA1 

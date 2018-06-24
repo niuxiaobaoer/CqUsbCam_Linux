@@ -1,0 +1,3 @@
+/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/examples/cmd/SC130GS/build/CMakeFiles/edit_cache.dir
+/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/examples/cmd/SC130GS/build/CMakeFiles/rebuild_cache.dir
+/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/examples/cmd/SC130GS/build/CMakeFiles/usbCamConsole.dir
