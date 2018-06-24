@@ -303,6 +303,30 @@ sensors/MT9V034.cpp.s:
 	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.s
 .PHONY : sensors/MT9V034.cpp.s
 
+sensors/SC130GS.o: sensors/SC130GS.cpp.o
+.PHONY : sensors/SC130GS.o
+
+# target to build an object file
+sensors/SC130GS.cpp.o:
+	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/sensors/SC130GS.cpp.o
+.PHONY : sensors/SC130GS.cpp.o
+
+sensors/SC130GS.i: sensors/SC130GS.cpp.i
+.PHONY : sensors/SC130GS.i
+
+# target to preprocess a source file
+sensors/SC130GS.cpp.i:
+	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/sensors/SC130GS.cpp.i
+.PHONY : sensors/SC130GS.cpp.i
+
+sensors/SC130GS.s: sensors/SC130GS.cpp.s
+.PHONY : sensors/SC130GS.s
+
+# target to generate assembly for a file
+sensors/SC130GS.cpp.s:
+	$(MAKE) -f CMakeFiles/CqUsbCam.dir/build.make CMakeFiles/CqUsbCam.dir/sensors/SC130GS.cpp.s
+.PHONY : sensors/SC130GS.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -336,6 +360,9 @@ help:
 	@echo "... sensors/MT9V034.o"
 	@echo "... sensors/MT9V034.i"
 	@echo "... sensors/MT9V034.s"
+	@echo "... sensors/SC130GS.o"
+	@echo "... sensors/SC130GS.i"
+	@echo "... sensors/SC130GS.s"
 .PHONY : help
 
 

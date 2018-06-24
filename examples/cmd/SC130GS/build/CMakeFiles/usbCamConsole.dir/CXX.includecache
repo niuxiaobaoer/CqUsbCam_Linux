@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/CqUsbCam.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/CqUsbCam.h
 stdio.h
 -
 string
@@ -14,23 +14,23 @@ string
 list
 -
 cyusb.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/cyusb.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/cyusb.h
 Types.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/Types.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
 ImgFrame.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/ImgFrame.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/ImgFrame.h
 wqueue.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/wqueue.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/wqueue.h
 DataCapture.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/DataCapture.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/DataCapture.h
 DataProcess.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/DataProcess.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/DataProcess.h
 tagSensor.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/tagSensor.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/tagSensor.h
 
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/DataCapture.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/DataCapture.h
 Types.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/Types.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
 string
 -
 stdint.h
@@ -38,21 +38,21 @@ stdint.h
 string.h
 -
 ImgFrame.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/ImgFrame.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/ImgFrame.h
 wqueue.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/wqueue.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/wqueue.h
 cyusb.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/cyusb.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/cyusb.h
 
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/DataProcess.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/DataProcess.h
 ImgFrame.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/ImgFrame.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/ImgFrame.h
 wqueue.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/wqueue.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/wqueue.h
 Types.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/Types.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
 
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/ImgFrame.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/ImgFrame.h
 stdint.h
 -
 string.h
@@ -62,19 +62,19 @@ unistd.h
 list
 -
 Types.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/Types.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
 
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h
 
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/Types.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
 
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/cyusb.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/cyusb.h
 libusb-1.0/libusb.h
 -
 linux/types.h
 -
 
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/tagSensor.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/tagSensor.h
 stdio.h
 -
 stdlib.h
@@ -82,11 +82,11 @@ stdlib.h
 string
 -
 Types.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/Types.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/Types.h
 cyusb.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/cyusb.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/cyusb.h
 
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/wqueue.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/wqueue.h
 pthread.h
 -
 list
@@ -94,7 +94,7 @@ list
 unistd.h
 -
 
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/examples/cmd/SC130GS/main.cpp
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/examples/cmd/SC130GS/main.cpp
 stdio.h
 -
 stdlib.h
@@ -107,8 +107,10 @@ termio.h
 -
 opencv2/highgui/highgui.hpp
 -
+opencv2/opencv.hpp
+-
 ../../../../CqUsbCam_Linux/CqUsbCam/CqUsbCam.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/CqUsbCam.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/CqUsbCam.h
 ../../../../CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h
-/home/nxb/Desktop/MyWorkspace/CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h
+/home/nxb/Desktop/USBCamera/USB30/MyLinuxUsbSdkDemo/CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h
 

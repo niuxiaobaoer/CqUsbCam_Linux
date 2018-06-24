@@ -15,7 +15,7 @@ link_directories("../../../../../CqUsbCam_Linux/CqUsbCam/build")
 link_libraries(CqUsbCam)
 link_directories("/usr/local/lib")
 #link_libraries(opencv_core  opencv_highgui usb-1.0)
-link_libraries(opencv_core  opencv_highgui)
+link_libraries(opencv_core  opencv_highgui opencv_imgproc)
 
 add_executable(usbCamConsole ${DIR_SRCS})
 #target_link_libraries (usbCamconsole  cyusb CqUsbCam)

@@ -6,6 +6,7 @@ CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o: .././cyusb.h
 CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o: .././sensors/AR0135.h
 CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o: .././sensors/AR0144.h
 CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o: .././sensors/MT9V034.h
+CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o: .././sensors/SC130GS.h
 CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o: .././tagSensor.h
 CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o: ../CqUsbCam.cpp
 CMakeFiles/CqUsbCam.dir/CqUsbCam.cpp.o: ../CqUsbCam.h
@@ -60,4 +61,11 @@ CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o: ../cyusb.h
 CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o: ../sensors/MT9V034.cpp
 CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o: ../sensors/MT9V034.h
 CMakeFiles/CqUsbCam.dir/sensors/MT9V034.cpp.o: ../tagSensor.h
+
+CMakeFiles/CqUsbCam.dir/sensors/SC130GS.cpp.o: ../SensorCapbablity.h
+CMakeFiles/CqUsbCam.dir/sensors/SC130GS.cpp.o: ../Types.h
+CMakeFiles/CqUsbCam.dir/sensors/SC130GS.cpp.o: ../cyusb.h
+CMakeFiles/CqUsbCam.dir/sensors/SC130GS.cpp.o: ../sensors/SC130GS.cpp
+CMakeFiles/CqUsbCam.dir/sensors/SC130GS.cpp.o: ../sensors/SC130GS.h
+CMakeFiles/CqUsbCam.dir/sensors/SC130GS.cpp.o: ../tagSensor.h
 

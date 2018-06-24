@@ -6,6 +6,8 @@
 #include <termio.h>
 
 #include <opencv2/highgui/highgui.hpp>
+#include <opencv2/opencv.hpp>
+
 
 #include "../../../../CqUsbCam_Linux/CqUsbCam/CqUsbCam.h"
 #include "../../../../CqUsbCam_Linux/CqUsbCam/SensorCapbablity.h"
@@ -76,16 +78,46 @@ int g_byteBitDepthNo=1;
 pthread_mutex_t mutexDisp;
 pthread_mutex_t mutexCam;
 
+
+void balance(cv::Mat frame_rgb, cv::Mat& frame_balance)
+{
+	vector<cv::Mat> imageRGB;
+	split(frame_rgb, imageRGB);
+	//求原始图像的RGB分量的均值 
+	double R, G, B;
+	B = mean(imageRGB[0])[0];
+	G = mean(imageRGB[1])[0];
+	R = mean(imageRGB[2])[0];
+
+	//需要调整的RGB分量的增益 
+	double KR, KG, KB;
+	KB = (R + G + B) / (3 * B);
+	KG = (R + G + B) / (3 * G);
+	KR = (R + G + B) / (3 * R);
+
+	//调整RGB三个通道各自的值 
+	imageRGB[0] = imageRGB[0] * KB;
+	imageRGB[1] = imageRGB[1] * KG;
+	imageRGB[2] = imageRGB[2] * KR;
+
+	//RGB三通道图像合并 
+	merge(imageRGB, frame_balance);
+}
+
+
+
 void Disp(void* frameData)
 {
 	pthread_mutex_lock(&mutexDisp);
-	cv::Mat frame(g_height, g_width, (g_byteBitDepthNo==1? CV_8UC1: CV_16UC1), (unsigned char*)frameData);	
-	cv::imshow("disp",frame);
+	cv::Mat frame_gray(g_height, g_width, CV_8UC1,  (unsigned char*)frameData);
+	cv::Mat frame_rgb, frame_balance;
+	cv::cvtColor(frame_gray, frame_rgb, CV_BayerRG2BGR);	
+	balance(frame_rgb, frame_balance);
+	cv::imshow("disp",frame_balance/*frame_rgb*/);
 	cv::waitKey(1);
 	pthread_mutex_unlock(&mutexDisp);
 
 }
-
 
 
 CCqUsbCam cam0, *pCamInUse;
