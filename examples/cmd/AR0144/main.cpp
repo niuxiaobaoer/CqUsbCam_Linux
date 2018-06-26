@@ -85,7 +85,7 @@ void Disp(void* frameData)
 	pthread_mutex_lock(&mutexDisp);
 	cv::Mat frame(g_height, g_width, (g_byteBitDepthNo==1? CV_8UC1: CV_16UC1), (unsigned char*)frameData);	
 	cv::imshow("disp",frame);
-	cv::waitKey(1);
+	cv::waitKey(10);
 
 	if(g_bSave_all)
 	{

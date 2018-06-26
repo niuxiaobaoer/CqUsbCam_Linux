@@ -114,7 +114,7 @@ void Disp(void* frameData)
 	cv::cvtColor(frame_gray, frame_rgb, CV_BayerRG2BGR);	
 	balance(frame_rgb, frame_balance);
 	cv::imshow("disp",frame_balance/*frame_rgb*/);
-	cv::waitKey(1);
+	cv::waitKey(10);
 	pthread_mutex_unlock(&mutexDisp);
 
 }

@@ -84,7 +84,7 @@ void Disp(void* frameData)
 	pthread_mutex_lock(&mutexDisp);
 	cv::Mat frame(g_height, g_width, CV_8UC1, (unsigned char*)frameData);	
 	cv::imshow("disp",frame);
-	cv::waitKey(1);
+	cv::waitKey(10);
 	pthread_mutex_unlock(&mutexDisp);
 
 }
